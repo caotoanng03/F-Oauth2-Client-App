@@ -82,6 +82,7 @@ public class ProductController {
 
             redirectAttributes.addFlashAttribute("success", "Product created successfully!");
             return "redirect:/products";
+
         } catch (Exception e) {
             model.addAttribute("error", "Failed to create product: " + e.getMessage());
             return "create-product";

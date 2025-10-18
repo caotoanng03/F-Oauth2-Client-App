@@ -19,6 +19,11 @@
     <div class="col-md-10 mx-auto">
       <h2 class="mb-4">Products</h2>
 
+      <div th:if="${success}" class="alert alert-success alert-dismissible fade show">
+        <span th:text="${success}"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+
       <div th:if="${error}" class="alert alert-danger alert-dismissible fade show">
         <span th:text="${error}"></span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
